@@ -1,1 +1,1 @@
-# CypressStarterKit
+# Cypress Starter Kit 🌿
