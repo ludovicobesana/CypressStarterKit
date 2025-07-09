@@ -4,16 +4,12 @@
 
 Cypress Starter Kit is a comprehensive boilerplate repository designed to help developers quickly set up an automated testing environment using [Cypress](https://www.cypress.io/) and [cypress-axe](https://github.com/component-driven/cypress-axe). It includes accessibility testing support, sensible defaults, and useful scripts to streamline testing workflows.
 
----
-
 ## Features
 
 - Pre-configured Cypress environment with TypeScript
 - Accessibility testing with `cypress-axe`
 - Ready-to-use scripts for CI workflows
 - ESLint + TypeScript support
-
----
 
 ## Installation
 
@@ -36,8 +32,6 @@ Cypress Starter Kit is a comprehensive boilerplate repository designed to help d
    npm run cypress:open
    ```
 
----
-
 ### Usage
 The repository includes several npm scripts for different testing scenarios:
 
@@ -47,7 +41,6 @@ The repository includes several npm scripts for different testing scenarios:
 - `npm run test:ally`: Run accessibility tests only
 - `npm run lint`: Run ESLint on `.ts` and `.js` files
 - `npm run type-check`: Run TypeScript type checks
----
 
 ## Contributing
 
