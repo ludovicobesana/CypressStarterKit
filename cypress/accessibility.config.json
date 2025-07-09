@@ -1,0 +1,12 @@
+{
+  "significantAttributes": [
+    {
+      "selector": "button",
+      "attributes": ["type", "disabled"]
+    },
+    {
+      "selector": "*",
+      "attributes": ["aria-*"]
+    }
+  ]
+}

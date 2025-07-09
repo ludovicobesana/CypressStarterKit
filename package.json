@@ -1,7 +1,33 @@
 {
+  "name": "cypress-starter-kit",
+  "version": "1.0.0",
+  "description": "A starter kit for Cypress E2E and accessibility testing with TypeScript and cypress-axe.",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run",
+    "test:ally": "cypress run --spec 'tests/accessibility/**/*.spec.ts'",
+    "lint": "eslint . --ext .ts,.js",
+    "type-check": "tsc --noEmit"
+  },
   "devDependencies": {
     "cypress": "^14.5.0",
     "cypress-axe": "^1.6.0",
-    "typescript": "^5.8.3"
-  }
+    "typescript": "^5.8.3",
+    "eslint": "^8.57.0"
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "accessibility",
+    "axe-core",
+    "typescript",
+    "testing"
+  ]
 }
