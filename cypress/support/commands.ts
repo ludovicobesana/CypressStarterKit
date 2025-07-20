@@ -33,6 +33,26 @@ Cypress.Commands.add(
           cy.task('log', `Help URL: ${v.helpUrl}`)
           v.nodes.forEach((node, nidx) => {
             cy.task('log', `    \u001b[33m• Node #${nidx + 1}: ${node.target}\u001b[0m`)
+            if (Array.isArray(node.target) && node.target.length > 0) {
+              const selector = node.target[0]
+              if (typeof selector === 'string') {
+                const screenshotName = `a11y-violation-${v.id}-node${nidx + 1}`
+                cy.get('body').then($body => {
+                  if ($body.find(selector).length > 0) {
+                    cy.get(selector, { timeout: 5000 })
+                      .should('exist')
+                      .screenshot(screenshotName, { capture: 'viewport' })
+                      .then(() => {
+                        cy.task('log', `      \u001b[36mScreenshot saved for selector: ${selector} (name: ${screenshotName})\u001b[0m`)
+                      })
+                  } else {
+                    cy.task('log', `      \u001b[31mScreenshot failed: selector not found in DOM: ${selector}\u001b[0m`)
+                  }
+                })
+              } else {
+                cy.task('log', `      \u001b[33mSkipping screenshot: unsupported selector type\u001b[0m`)
+              }
+            }
             if (node.failureSummary) {
               cy.task('log', `      \u001b[31m───────────── FAILURE SUMMARY ─────────────\u001b[0m`)
               node.failureSummary.split('\n').forEach(line => {
