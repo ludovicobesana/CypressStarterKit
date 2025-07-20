@@ -14,7 +14,6 @@ module.exports = defineConfig({
           return null
         },
         table(data) {
-          // Stampa una tabella leggibile in console
           console.table(data)
           return null
         }
