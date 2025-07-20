@@ -21,6 +21,7 @@ jobs:
       - name: Run Cypress tests
         run: npm run test:ally
       - name: Upload screenshots artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
