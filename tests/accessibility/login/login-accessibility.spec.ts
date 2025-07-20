@@ -1,6 +1,10 @@
+import { LoginPage } from '../../../cypress/pages/LoginPage'
+
 describe('Accessibility checks - SauceDemo Login Page', function () {
+  const loginPage = new LoginPage()
+
   beforeEach(function () {
-    cy.visit('https://www.saucedemo.com/')
+    loginPage.visit()
     cy.injectAxe()
   })
 

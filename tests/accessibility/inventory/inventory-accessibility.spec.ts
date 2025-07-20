@@ -1,10 +1,11 @@
+import { InventoryPage } from '../../../cypress/pages/InventoryPage'
+
 describe('Accessibility checks - SauceDemo Inventory Page', function () {
+  const inventoryPage = new InventoryPage()
+
   beforeEach(function () {
-    cy.visit('https://www.saucedemo.com/')
-    cy.get('[data-test="username"]').type('standard_user')
-    cy.get('[data-test="password"]').type('secret_sauce')
-    cy.get('[data-test="login-button"]').click()
-    cy.url().should('include', '/inventory.html')
+    inventoryPage.visit()
+    inventoryPage.login('standard_user', 'secret_sauce')
     cy.injectAxe()
   })
 

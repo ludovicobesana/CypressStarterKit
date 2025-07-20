@@ -4,7 +4,8 @@
     "lib": ["es5", "dom"],
     "sourceMap": true,
     "types": ["cypress", "node"],
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "resolveJsonModule": true
   },
   "include": ["**/*.ts"]
 }
