@@ -1,4 +1,7 @@
+
 # Cypress Starter Kit 🌿
+
+[![Cypress Tests](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress.yml/badge.svg)](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress.yml)
 
 ## Overview
 
@@ -32,6 +35,7 @@ Cypress Starter Kit is a comprehensive boilerplate repository designed to help d
    npm run cypress:open
    ```
 
+
 ### Usage
 The repository includes several npm scripts for different testing scenarios:
 
@@ -41,6 +45,15 @@ The repository includes several npm scripts for different testing scenarios:
 - `npm run test:ally`: Run accessibility tests only
 - `npm run lint`: Run ESLint on `.ts` and `.js` files
 - `npm run type-check`: Run TypeScript type checks
+- `npm run clean:screenshots`: Delete all screenshots in `cypress/screenshots/`
+
+#### GitHub Actions & Artifacts
+
+On every push or pull request to `main`, Cypress accessibility tests are run automatically via GitHub Actions.
+
+- All screenshots generated during the run are saved as a downloadable artifact named `cypress-screenshots`.
+
+You can view the status badge at the top of this README and download artifacts from the Actions tab on GitHub.
 
 ## Contributing
 
