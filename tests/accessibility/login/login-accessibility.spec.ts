@@ -9,12 +9,12 @@ describe('Accessibility checks - SauceDemo Login Page', function () {
   })
 
   it('Has no critical or serious accessibility violations on login page', function () {
-    cy.checkA11y(null, {
+    cy.checkA11yWithLog(null, {
       includedImpacts: ['critical', 'serious'],
     })
   })
 
   it('Login form is accessible', function () {
-    cy.checkA11y('form')
+    cy.checkA11yWithLog('form')
   })
 })

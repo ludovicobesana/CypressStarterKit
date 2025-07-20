@@ -8,7 +8,17 @@ module.exports = defineConfig({
       saucedemo: "https://www.saucedemo.com/",
     },
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      on('task', {
+        log(message) {
+          console.log(message)
+          return null
+        },
+        table(data) {
+          // Stampa una tabella leggibile in console
+          console.table(data)
+          return null
+        }
+      })
     },
   },
 });

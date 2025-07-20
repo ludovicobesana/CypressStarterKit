@@ -10,11 +10,8 @@ describe('Accessibility checks - SauceDemo Inventory Page', function () {
   })
 
   it('Has no critical or serious accessibility violations on inventory page', function () {
-    cy.checkA11y(null, {
+    cy.checkA11yWithLog(null, {
       includedImpacts: ['critical', 'serious'],
-    }, (violations) => {
-      cy.logA11yViolations(violations)
-      expect(violations, 'No accessibility violations').to.have.length(0)
     })
   })
 })
