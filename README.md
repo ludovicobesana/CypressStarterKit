@@ -4,8 +4,6 @@
 [![Cypress Tests](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress-basic.yml/badge.svg)](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress-basic.yml)
 [![Cypress CI Badge](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/simple/jzmbfq/main&style=flat&logo=cypress)](https://cloud.cypress.io/projects/jzmbfq/runs)
 
-[![Cypress Tests](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress.yml/badge.svg)](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress.yml)
-
 ## Overview
 
 Cypress Starter Kit is a comprehensive boilerplate repository designed to help developers quickly set up an automated testing environment using [Cypress](https://www.cypress.io/) and [cypress-axe](https://github.com/component-driven/cypress-axe). It includes accessibility testing support, sensible defaults, and useful scripts to streamline testing workflows.
