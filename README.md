@@ -1,6 +1,9 @@
 
 # Cypress Starter Kit 🌿
 
+[![Cypress Tests](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress-basic.yml/badge.svg)](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress-basic.yml)
+[![Cypress CI Badge](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/simple/jzmbfq/main&style=flat&logo=cypress)](https://cloud.cypress.io/projects/jzmbfq/runs)
+
 [![Cypress Tests](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress.yml/badge.svg)](https://github.com/ludovicobesana/CypressStarterKit/actions/workflows/cypress.yml)
 
 ## Overview
@@ -46,6 +49,10 @@ The repository includes several npm scripts for different testing scenarios:
 - `npm run lint`: Run ESLint on `.ts` and `.js` files
 - `npm run type-check`: Run TypeScript type checks
 - `npm run clean:screenshots`: Delete all screenshots in `cypress/screenshots/`
+
+## Configuration
+
+For Cypress Cloud setup and advanced features, see [CYPRESS_CLOUD_SETUP.md](CYPRESS_CLOUD_SETUP.md).
 
 #### GitHub Actions & Artifacts
 

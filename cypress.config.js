@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: process.env.CYPRESS_PROJECT_ID,
   e2e: {
     specPattern: "tests/accessibility/**/*.spec.ts",
     supportFile: "cypress/support/e2e.js",
