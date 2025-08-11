@@ -10,6 +10,7 @@ module.exports = defineConfig({
       saucedemo: "https://www.saucedemo.com/",
     },
     setupNodeEvents(on, config) {
+      config.env.CYPRESS_RECORD_KEY = process.env.CYPRESS_RECORD_KEY;
       on('task', {
         log(message) {
           console.log(message)
@@ -20,6 +21,8 @@ module.exports = defineConfig({
           return null
         }
       })
+      
+      return config;
     },
   },
 });
