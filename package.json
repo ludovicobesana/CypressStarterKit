@@ -2,7 +2,12 @@
   "name": "cypress-starter-kit",
   "version": "1.0.0",
   "description": "A starter kit for Cypress E2E and accessibility testing with TypeScript and cypress-axe.",
-  "author": "",
+  "author": {
+    "name": "Ludovico Besana",
+    "email": "info@ludovicobesana.com",
+    "url": "https://github.com/ludovicobesana",
+    "author": true
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
