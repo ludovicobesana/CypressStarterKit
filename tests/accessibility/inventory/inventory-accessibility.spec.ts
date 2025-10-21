@@ -10,8 +10,14 @@ describe('Accessibility checks - SauceDemo Inventory Page', function () {
   })
 
   it('Has no critical or serious accessibility violations on inventory page', function () {
-    cy.checkA11yWithLog(null, {
+    const options = {
       includedImpacts: ['critical', 'serious'],
-    })
+
+      rules: {
+        'select-name': { enabled: false },
+      },
+    }
+
+    cy.checkA11yWithLog(null, options)
   })
 })

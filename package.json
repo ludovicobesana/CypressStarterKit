@@ -25,6 +25,7 @@
     "clean:screenshots": "rm -rf cypress/screenshots/*"
   },
   "devDependencies": {
+    "axe-core": "^4.11.0",
     "cross-env": "^7.0.3",
     "cypress": "^15.0.0",
     "cypress-axe": "^1.6.0",
