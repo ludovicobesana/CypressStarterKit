@@ -9,6 +9,8 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-24.04
+    env:
+      NPM_CONFIG_LEGACY_PEER_DEPS: 'true'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
